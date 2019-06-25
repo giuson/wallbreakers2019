@@ -1,8 +1,10 @@
 #FIZZ BUZZ
-#program that outputs the string representation of numbers from 1 to n.
-#for multiples of three it should output “Fizz” 
-#for the multiples of five output “Buzz”
-#For numbers which are multiples of both three and five output “FizzBuzz”.
+"""
+program that outputs the string representation of numbers from 1 to n.
+for multiples of three it should output “Fizz” 
+for the multiples of five output “Buzz”
+For numbers which are multiples of both three and five output “FizzBuzz”.
+"""
 class Solution:
     def fizzBuzz(self, n: int) -> List[str]:
         fizzBuzz = []
@@ -20,7 +22,7 @@ class Solution:
         return fizzBuzz
             
 #PLUS ONE
-#Given a non-empty array of digits representing a non-negative integer, plus one to the integer.
+"""Given a non-empty array of digits representing a non-negative integer, plus one to the integer."""
 class Solution:
     def plusOne(self, digits: List[int]) -> List[int]:
         number = int("".join(map(str, digits))) #turn input into a number
