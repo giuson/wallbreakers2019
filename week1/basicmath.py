@@ -30,3 +30,14 @@ class Solution:
         output = list(map(int, str(newNumber))) #turn back into array
         return output
         
+#POWER OF TWO
+#Given an integer, write a function to determine if it is a power of two.
+import math
+
+class Solution:
+    def isPowerOfTwo(self, n: int) -> bool:
+        test = int(math.log2(n))
+        if n != 2**test:
+            return False
+        else:
+            return True
